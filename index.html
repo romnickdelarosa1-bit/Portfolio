@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PORTFOLIO Dela Rosa</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="container navbar">
+    <div class="logo">PORTFOLIO</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#personal">Personal Info</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#feedback">Feedback</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+  </div>
+</header>
+
+<!-- Image Modal -->
+<div id="imageModal" class="modal">
+  <span class="close-modal" id="closeModal">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div class="modal-caption" id="modalCaption">Project Image</div>
+</div>
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <h4>Hello, I am</h4>
+      <div class="hero-title-container">
+        <h1>ROMNICK D. DELA ROSA</h1>
+        <h3>BSIT-2A</h3>
+      </div>
+      <div class="hero-actions">
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="#projects" class="btn-secondary">View Projects</a>
+      </div>
+
+      <div id="random-quote" style="margin-top: 1.5rem; background: rgba(212,175,55,0.08); border-left: 4px solid var(--gold); padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; max-width: 520px;">
+        <i class="fas fa-spinner fa-pulse" style="color: var(--gold);"></i> Loading quote...
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="profile-container">
+        <div class="profile-frame"></div>
+        <img src="images/prof.png" class="profile-photo" alt="profile">
+        <div class="photo-badge"><i class="fas fa-graduation-cap"></i> Student</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT ME -->
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="card">
+      <div style="font-size: 1.2rem; line-height: 1.8;">
+        <p style="margin-bottom: 1.2rem;">I'm a 2nd Year BSIT student at Camarines Norte State College. Right now, I'm taking Integrative Programming and Technology, where I'm learning how to make different systems and programs work with each other. Things like connecting applications through APIs or getting data from one program to another—it's challenging but I'm starting to understand how it all fits together.</p>
+        
+        <p style="margin-bottom: 1.2rem;">Aside from coding, I'm also learning how to work with others on projects, which is something I value. I may not know everything yet, but I'm willing to learn and do my part in any team I'm in.</p>
+        
+        <div style="background: rgba(212, 175, 55, 0.1); padding: 1.2rem; border-radius: var(--radius); border-left: 4px solid var(--gold); margin-top: 1.5rem;">
+          <h4 style="color: var(--gold); margin-bottom: 0.5rem; font-size: 1.2rem;">Career Goal</h4>
+          <p style="margin: 0;">To obtain a job as an IT Professional where I can demonstrate my problem-solving skills and knowledge about technology. I want to grow myself with the team, and do my best to support others in the workplace.</p>
+        </div>
+
+                <!-- LinkedIn Link -->
+            <div style="margin-top: 1.5rem;">
+              <a href="https://www.linkedin.com/in/romnick-delarosa-a045923b1/" target="_blank" style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(212,175,55,0.1); padding: 0.8rem 1.5rem; border-radius: 50px; border: 1px solid var(--gold);">
+            <i class="fab fa-linkedin-in" style="color: var(--gold);"></i>
+            <span>Connect on LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERSONAL INFO -->
+<section id="personal">
+  <div class="container">
+    <h2>Personal Information</h2>
+    <div class="card">
+      <div class="personal-info-grid">
+        <div>
+          <div class="personal-info-category">
+            <h3><i class="fas fa-user"></i> Basic Information</h3>
+            <div class="info-item"><span class="info-label">Full Name:</span><span class="info-value">Romnick Dela Rosa</span></div>
+            <div class="info-item"><span class="info-label">Date of Birth:</span><span class="info-value">July 1, 2006</span></div>
+            <div class="info-item"><span class="info-label">Age:</span><span class="info-value">19 years old</span></div>
+            <div class="info-item"><span class="info-label">Gender:</span><span class="info-value">Male</span></div>
+            <div class="info-item"><span class="info-label">Civil Status:</span><span class="info-value">Single</span></div>
+            <div class="info-item"><span class="info-label">Nationality:</span><span class="info-value">Filipino</span></div>
+          </div>
+          <div class="personal-info-category">
+            <h3><i class="fas fa-home"></i> Address</h3>
+            <div class="info-item"><span class="info-label">Current Address:</span><span class="info-value">Purok-3 Brgy. Malaguit, Paracale, Camarines Norte</span></div>
+            <div class="info-item"><span class="info-label">Place of Birth:</span><span class="info-value">Navotas Medical Center</span></div>
+          </div>
+        </div>
+        <div>
+          <div class="personal-info-category">
+            <h3><i class="fas fa-users"></i> Family Background</h3>
+            <div class="info-item"><span class="info-label">Father's Name:</span><span class="info-value">Romeo P. Dela Rosa</span></div>
+            <div class="info-item"><span class="info-label">Occupation:</span><span class="info-value">Welder</span></div>
+            <div class="info-item"><span class="info-label">Mother's Name:</span><span class="info-value">Monica D. Dela Rosa</span></div>
+            <div class="info-item"><span class="info-label">Occupation:</span><span class="info-value">Housewife</span></div>
+          </div>
+          <div class="personal-info-category">
+            <h3><i class="fas fa-language"></i> Languages</h3>
+            <div class="languages-section">
+              <div class="language-tag"><i class="fas fa-flag"></i> Tagalog</div>
+              <div class="language-tag"><i class="fas fa-globe"></i> English</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="container">
+    <h2>Education Timeline</h2>
+    <div class="card">
+      <div class="timeline">
+        <div class="timeline-item"><div class="timeline-content"><span class="timeline-date">2024 – Present</span><h3>Bachelor of Science in Information Technology</h3><p class="institution">Camarines Norte State College</p><p class="details">F. Pimentel Avenue, Daet, Camarines Norte</p><p class="details">Currently pursuing BSIT degree</p></div></div>
+        <div class="timeline-item"><div class="timeline-content"><span class="timeline-date">2022 - 2024</span><h3>Senior High School</h3><p class="institution">Paracale National High School</p><p class="details">Technical Vocational and Livelihood (Track)</p><p class="details">Information and Communication Technology (Strand)</p><p class="details">Bagumbayan, Paracale, Camarines Norte</p></div></div>
+        <div class="timeline-item"><div class="timeline-content"><span class="timeline-date">2018 - 2022</span><h3>Junior High School</h3><p class="institution">Paracale National High School</p><p class="details">Bagumbayan, Paracale, Camarines Norte</p><p class="details">Completed Junior High School Education</p></div></div>
+        <div class="timeline-item"><div class="timeline-content"><span class="timeline-date">2012 - 2018</span><h3>Elementary School</h3><p class="institution">Pedro V. Moreno Elementary School</p><p class="details">Purok-3 Malaguit, Paracale, Camarines Norte</p><p class="details">Completed Elementary Education</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <h2>Skills & Qualifications</h2>
+    <div class="skills-grid">
+      <div class="card">
+        <h3><i class="fas fa-laptop-code" style="color: var(--gold); margin-right: 10px;"></i> Technical Skills</h3>
+        <ul>
+          <li>HTML5 & CSS3 – responsive layouts, flex/grid</li>
+          <li>JavaScript (ES6) – DOM manipulation, async/await, API calls</li>
+          <li>Java – fundamentals, OOP, file handling</li>
+          <li>API Integration – REST, JSON, GitHub & Quoteslate APIs</li>
+          <li>Tools: Git, VS Code, Figma (basic prototyping)</li>
+          <li>Basic hardware/software troubleshooting</li>
+        </ul>
+      </div>
+      <div class="card"><h3><i class="fas fa-users" style="color: var(--gold); margin-right: 10px;"></i> Soft Skills</h3><ul><li>Strong problem-solving abilities</li><li>Excellent communication skills</li><li>Team collaboration</li><li>Adaptability and willingness to learn</li></ul></div>
+      <div class="card"><h3><i class="fas fa-briefcase" style="color: var(--gold); margin-right: 10px;"></i> Work Experience</h3><div class="work-experience"><div class="work-experience-header"><h4>Work Immersion</h4><div class="work-company">SJ Computer Services</div><div class="work-location"><i class="fas fa-map-marker-alt"></i> Daet, Camarines Norte</div><div class="work-date">2024</div></div><ul><li>Assisted in computer troubleshooting</li><li>Supported hardware assembly</li><li>Helped with software installation</li><li>Basic customer service</li></ul></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/hotel.png" alt="Hotel File System Project"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-hotel"></i><h3>Hotel File System</h3></div>
+          <div class="project-description">A desktop-based hotel file system designed to manage guest records, reservations, and basic hotel operations...</div>
+          <div class="project-tech"><span class="tech-tag">Desktop Application</span><span class="tech-tag">File Management</span><span class="tech-tag">Data Storage</span><span class="tech-tag">Java</span></div>
+          <!-- Inquiry Button -->
+          <button class="btn-inquiry" data-project="Hotel File System"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/earls.png" alt="Earl's Food and Whatnot Website"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-globe"></i><h3>Earl's Food and Whatnot Website</h3></div>
+          <div class="project-description">A food business website created to showcase products, menus, and brand identity...</div>
+          <div class="project-tech"><span class="tech-tag">Web Development</span><span class="tech-tag">HTML/CSS</span><span class="tech-tag">JavaScript</span><span class="tech-tag">Responsive Design</span></div>
+          <button class="btn-inquiry" data-project="Earl's Food and Whatnot Website"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/fileman.png" alt="File Manager System"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-cogs"></i><h3>File Manager System</h3></div>
+          <div class="project-description">A file management system developed in Java using Object-Oriented Programming principles...</div>
+          <div class="project-tech"><span class="tech-tag">Java OOP</span><span class="tech-tag">File Handling</span><span class="tech-tag">System Design</span><span class="tech-tag">Modular Design</span></div>
+          <button class="btn-inquiry" data-project="File Manager System"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/monkey.png" alt="Monkey Monkey Game"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-puzzle-piece"></i><h3>Monkey Monkey Game</h3></div>
+          <div class="project-description">A simple game developed to apply data structures and algorithms concepts...</div>
+          <div class="project-tech"><span class="tech-tag">Game Development</span><span class="tech-tag">Data Structures</span><span class="tech-tag">Algorithms</span><span class="tech-tag">Java</span></div>
+          <button class="btn-inquiry" data-project="Monkey Monkey Game"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/map.png" alt="CNSC Map System"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-university"></i><h3>CNSC Map System</h3></div>
+          <div class="project-description">A map system specifically designed for Camarines Norte State College (CNSC) that applies data structures and algorithms...</div>
+          <div class="project-tech"><span class="tech-tag">Data Structures</span><span class="tech-tag">Algorithms</span><span class="tech-tag">Navigation</span><span class="tech-tag">Graph Theory</span></div>
+          <button class="btn-inquiry" data-project="CNSC Map System"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/edumath.png" alt="EduMath App"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-mobile-alt"></i><h3>EduMath App</h3></div>
+          <div class="project-description">An educational mobile application designed to help Grade 3 students improve their math skills...</div>
+          <div class="project-tech"><span class="tech-tag">Mobile App</span><span class="tech-tag">Education</span><span class="tech-tag">Interactive</span><span class="tech-tag">Android</span></div>
+          <button class="btn-inquiry" data-project="EduMath App"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+      <!-- Project 7 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/hci.png" alt="Trabahanap (HCI Design Expo)"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-users"></i><h3>Trabahanap (HCI Design Expo)</h3></div>
+          <div class="project-description">A human-centered interface project presented at a design expo...</div>
+          <div class="project-tech"><span class="tech-tag">UI/UX Design</span><span class="tech-tag">HCI</span><span class="tech-tag">Prototyping</span><span class="tech-tag">Figma</span></div>
+          <button class="btn-inquiry" data-project="Trabahanap (HCI Design Expo)"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+      <!-- Project 8 -->
+      <div class="project-card">
+        <div class="project-image"><img src="images/vanterm.png" alt="Van Terminal Queueing System"></div>
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-code"></i><h3>Van Terminal Queueing System</h3></div>
+          <div class="project-description">A van terminal simulation project that applies queue data structures using FIFO...</div>
+          <div class="project-tech"><span class="tech-tag">Data Structures</span><span class="tech-tag">Algorithms</span><span class="tech-tag">Queue (FIFO)</span><span class="tech-tag">Java</span></div>
+          <button class="btn-inquiry" data-project="Van Terminal Queueing System"><i class="fas fa-question-circle"></i> Inquire</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- GITHUB REPOS -->
+    <div style="margin-top: 4rem;">
+      <h3 style="color: var(--gold); border-bottom: 2px solid var(--gold); padding-bottom: 0.5rem; display: inline-block;">
+        <i class="fab fa-github"></i> GitHub Repositories
+      </h3>
+      <div id="github-container">
+        <div class="api-loading" id="github-loading"><i class="fas fa-spinner fa-pulse"></i> Loading repos...</div>
+        <div class="repo-grid" id="github-repos" style="display: none;"></div>
+        <div class="api-error" id="github-error" style="display: none;"><i class="fas fa-exclamation-triangle"></i> Could not fetch repositories.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container contact">
+    <h2>Contact Information</h2>
+    <div class="card">
+      <div class="contact-grid">
+        <div>
+          <h3 style="color: var(--gold); margin-bottom: 1.5rem;">Contact Details</h3>
+          <div class="contact-info">
+            <p><i class="fas fa-phone"></i> 0956-480-5257</p>
+            <p><i class="fas fa-envelope"></i> romnickdelarosa@gmail.com</p>
+            <p><i class="fas fa-map-marker-alt"></i> Purok-3 Brgy. Malaguit, Paracale, Camarines Norte</p>
+          </div>
+          <div class="social-media">
+            <div class="social-icons">
+              <a href="https://www.facebook.com/ts.nicckko" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i><span>Facebook</span></a>
+              <a href="https://www.instagram.com/_nicckko" target="_blank" class="social-icon"><i class="fab fa-instagram"></i><span>Instagram</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Contact form -->
+      <div style="margin-top: 2.5rem; border-top: 1px solid rgba(212,175,55,0.2); padding-top: 2rem;">
+        <h3 style="color: var(--gold);"><i class="fas fa-paper-plane"></i> Send me a message</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="contact-name" placeholder="Juan Dela Cruz" required>
+          </div>
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="contact-email" placeholder="juan@example.com" required>
+          </div>
+          <div class="form-group">
+            <label>Message *</label>
+            <textarea id="contact-message" rows="4" placeholder="Your message..." required></textarea>
+          </div>
+          <button type="submit" class="btn" style="border:none; cursor:pointer;"><i class="fas fa-envelope"></i> Send Message</button>
+          <div id="contact-result" style="margin-top:1.5rem;"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEEDBACK with collapsible history -->
+<section id="feedback">
+  <div class="container">
+    <h2>Visitor Feedback</h2>
+    <div class="card">
+      <p style="margin-bottom:1.5rem;">Leave a comment or testimonial</p>
+      <form id="feedback-form">
+        <div class="form-group">
+          <label>Your Name *</label>
+          <input type="text" id="feedback-name" placeholder="Name" required>
+        </div>
+        <div class="form-group">
+          <label>Your Feedback *</label>
+          <textarea id="feedback-message" rows="3" placeholder="What do you think about this portfolio?" required></textarea>
+        </div>
+        <button type="submit" class="btn" style="border:none;"><i class="fas fa-comment"></i> Submit Feedback</button>
+        <div id="feedback-result"></div>
+      </form>
+
+      <div style="margin-top: 2.5rem; border-top: 1px solid rgba(212,175,55,0.2); padding-top: 1.5rem;">
+        <button id="toggle-feedback-btn" class="btn-secondary" style="margin-bottom: 1rem; padding: 0.5rem 1rem; font-size: 0.9rem;">
+          <i class="fas fa-chevron-down" id="toggle-icon"></i> Show past feedback
+        </button>
+        <div id="feedback-list-container" style="display: none;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Project Inquiry Modal (FIXED - responsive and enhanced) -->
+<div id="inquiryModal" class="modal">
+  <span class="close-modal" id="closeInquiryModal">&times;</span>
+  <div class="modal-content inquiry-modal-content">
+    <h3 style="color: var(--gold); margin-bottom: 1.5rem;"><i class="fas fa-paper-plane"></i> Project Inquiry</h3>
+    <form id="inquiry-form">
+      <div class="form-group">
+        <label>Project</label>
+        <input type="text" id="inquiry-project" readonly class="inquiry-project-input">
+      </div>
+      <div class="form-group">
+        <label>Your Name *</label>
+        <input type="text" id="inquiry-name" required>
+      </div>
+      <div class="form-group">
+        <label>Your Email *</label>
+        <input type="email" id="inquiry-email" required>
+      </div>
+      <div class="form-group">
+        <label>Message *</label>
+        <textarea id="inquiry-message" rows="5" required></textarea> <!-- increased rows -->
+      </div>
+      <button type="submit" class="btn" style="border:none; width:100%;"><i class="fas fa-envelope"></i> Send Inquiry</button>
+      <div id="inquiry-result" style="margin-top:1rem;"></div>
+    </form>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 ROMNICK DELA ROSA | Portfolio</p>
+  <p style="margin-top: 1rem; font-size: 0.9rem;">Designed with love and dedication to pass this subject</p>
+</footer>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<!-- Your script -->
+<script src="js/script.js"></script>
+</body>
+</html>
